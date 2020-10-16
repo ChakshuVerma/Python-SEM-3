@@ -1,2 +1,1 @@
-# Pyhton-SEM-3
-python Semester 3 stuff
+Practical Questions Of Python In Sem-3
