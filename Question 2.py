@@ -31,7 +31,7 @@ def monthlysales(s,i):
 #function to print commission of each salesman
     
 def commission(s,i):
-    if(s>=50000):
+    if(s>=50000): 
         print("Commission of Salesman ",i+1," is : " ,s*0.05)
     else :
         print("Commission of Salesman ",i+1," is : 0")
