@@ -2,7 +2,7 @@
 Q2. Consider a showroom of electronic products,where there are various
     salesmen . Each salesman is given a commission of 5% , depending on the sales
     made per month . In case the sale done is less than 50000 , then the salesman is
-    not give nany commission . Write a function to calculate total sales of a salesman
+    not given any commission . Write a function to calculate total sales of a salesman
     in a month , commission and remarks for the salesman . Sales done by each
     salesman per week is to be provided as input . Use tuples / list to store data of
     salesmen .
@@ -22,7 +22,7 @@ Q2. Consider a showroom of electronic products,where there are various
 #function to print monthy sales of each salesman
 
 def monthlysales(s,i):
-    print("\nSales Done In One Month By Salesman ",i+1," are : ",s*4)
+    print("\nSales Done In One Month By Salesman ",i+1," are : ",s)
     commission(s,i)
 
 
@@ -31,7 +31,7 @@ def monthlysales(s,i):
 #function to print commission of each salesman
     
 def commission(s,i):
-    if(s>=50000): 
+    if(s>=50000):
         print("Commission of Salesman ",i+1," is : " ,s*0.05)
     else :
         print("Commission of Salesman ",i+1," is : 0")
@@ -66,7 +66,7 @@ def main():
         s=0
         print("\nEnter The Sales For Salesman ",i+1," for four weeks")
         for j in range (1,5,1):
-             ele=int(input("Enter The Sales : "))        #Assuming the sales per week are constant for all weeks
+             ele=int(input("Enter The Sales : "))        
              s=s+ele 
         Sales.append(s)
         monthlysales(s,i)        
