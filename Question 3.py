@@ -33,18 +33,16 @@ def fibonacci(n):
         series.append(x)
         last=curr
         curr=x
-    return series
-    
+    print("\nThe Fibonacci Series having Upto ",n," Terms Is : ",series)
+    print("\nThe Factorial of ",series[n-1]," is : ",factorial(series[n-1])," \n")
+    return
     
 
 #main function
 
 def main():
-    n=int(input("\nEnter The Number Of Terms Upto Which You Want To See The Fibonacci Series : "))    
-    print("\nThe Fibonacci Series having Upto ",n," Terms Is : ",fibonacci(n))
-    print("\nThe Factorial of ",n," is : ",factorial(n)," \n")   
+    n=int(input("\nEnter The Number Of Terms Upto Which You Want To See The Fibonacci Series : "))
+    fibonacci(n)
 
 if __name__ == "__main__":
     main()
-
-    
